@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.css" />
+    <Content Include="app\appConfig.js" />
     <Content Include="app\appModule.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -79,7 +80,12 @@
     <Content Include="ext-modules\psFramework\psFrameworkModule.js" />
     <Content Include="ext-modules\psFramework\psFrameworkTemplate.html" />
     <Content Include="ext-modules\psFramework\psFramworkController.js" />
+    <Content Include="ext-modules\psMenu\psMenuItemDirective.js" />
+    <Content Include="ext-modules\psMenu\psMenuController.js" />
+    <Content Include="ext-modules\psMenu\psMenuDirective.js" />
+    <Content Include="ext-modules\psMenu\psMenuItemTemplate.html" />
     <Content Include="ext-modules\psMenu\psMenuModule.js" />
+    <Content Include="ext-modules\psMenu\psMenuTemplate.html" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Icon.png" />
