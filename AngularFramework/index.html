@@ -6,8 +6,10 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href="Content/bootstrap.min.css" rel="stylesheet"/>
     <link href="Content/font-awesome.min.css" rel="stylesheet"/>
+
     <link href="app/app.css" rel="stylesheet"/>
     <link href="ext-modules/psFramework/psFramework.css" rel="stylesheet"/>
+    <link href="ext-modules/psMenu/psMenu.css" rel="stylesheet" />
 
     <script src="Scripts/jquery-2.1.4.min.js"></script>
     <script src="Scripts/angular.min.js"></script>
@@ -31,9 +33,9 @@
               icon-file="images/kayak.jpg">
 
     <ps-menu>
-        <ps-menu-item label="Dashboard"></ps-menu-item>
-        <ps-menu-item label="Locations"></ps-menu-item>
-        <ps-menu-item label="Raft Guides"></ps-menu-item>
+        <ps-menu-item route="dashboard" label="Dashboard" icon="fa-dashboard"></ps-menu-item>
+        <ps-menu-item route="locations" label="Locations" icon="fa-location-arrow"></ps-menu-item>
+        <ps-menu-item route="guides" label="Raft Guides" icon="fa-user"></ps-menu-item>
     </ps-menu>
 
 </ps-framework>
