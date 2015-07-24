@@ -5,6 +5,7 @@ angular.module('psMenu').controller("psMenuController",
     function ($scope, $rootScope) {
 
         $scope.showMenu = true;
+        $scope.isVertical = true;
 
         this.getActiveElement = function() {
             return $scope.activeElement;
@@ -18,8 +19,19 @@ angular.module('psMenu').controller("psMenuController",
             $rootScope.$broadcast('ps-menu-item-selected-event', { route: route });
         };
 
+        this.isVertical = function () {
+            return $scope.isVertical;
+        };
+
         $scope.$on('ps-menu-show', function(evt, data) {
             $scope.showMenu = data.show;
         });
+
+        $scope.toggleMenuOrientation = function() {
+            $scope.isVertical = !$scope.isVertical;
+
+            $rootScope.$broadcast('ps-menu-orientation-changed-event',
+                { isMenuVertical: $scope.isVertical });
+        }
     }
 ]);

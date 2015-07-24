@@ -6,6 +6,7 @@ angular.module("psFramework").controller("psFramworkController",
 
         $scope.isMenuVisible = true;
         $scope.isMenuButtonVisible = true;
+        $scope.isMenuVertical = true;
 
         var checkWidth = function () {
             var width = Math.max($($window).width(), $window.innerWidth);
@@ -28,6 +29,10 @@ angular.module("psFramework").controller("psFramworkController",
             $scope.routeString = data.route;
             checkWidth();
             broadcastMenuState();
+        });
+
+        $scope.$on('ps-menu-orientation-changed-event', function (evt, data) {
+            $scope.isMenuVertical = data.isMenuVertical;
         });
 
         $scope.menuButtonClicked = function() {

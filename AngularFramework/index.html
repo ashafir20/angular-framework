@@ -18,6 +18,7 @@
     <script src="ext-modules/psMenu/psMenuController.js"></script>
     <script src="ext-modules/psMenu/psMenuDirective.js"></script>
     <script src="ext-modules/psMenu/psMenuItemDirective.js"></script>
+    <script src="ext-modules/psMenu/psMenuGroupDirective.js"></script>
 
     <script src="ext-modules/psDashboard/psDashboardModule.js"></script>
 
@@ -36,6 +37,11 @@
         <ps-menu-item route="dashboard" label="Dashboard" icon="fa-dashboard"></ps-menu-item>
         <ps-menu-item route="locations" label="Locations" icon="fa-location-arrow"></ps-menu-item>
         <ps-menu-item route="guides" label="Raft Guides" icon="fa-user"></ps-menu-item>
+        <ps-menu-group label="Equipment" icon="fa-gears">
+            <ps-menu-item route="rafts" label="Rafts" icon="fa-unlink"></ps-menu-item>
+            <ps-menu-item route="paddles" label="Paddles" icon="fa-magic"></ps-menu-item>
+            <ps-menu-item route="vests" label="Life Vests" icon="fa-life-ring"></ps-menu-item>
+        </ps-menu-group>
     </ps-menu>
 
 </ps-framework>
